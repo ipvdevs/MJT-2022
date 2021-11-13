@@ -14,28 +14,28 @@ public class WeatherForecaster {
                 ++tos;
                 stackIndices[tos] = i;
                 continue;
-            } else {
-                int tosVal = temperatures[stackIndices[tos]];
+	    }
 
-                while (currTemp > tosVal) {
+	    int tosVal = temperatures[stackIndices[tos]];
 
-                    forecast[stackIndices[tos]] = i - stackIndices[tos];
+	    while (currTemp > tosVal) {
 
-                    --tos;
+		    forecast[stackIndices[tos]] = i - stackIndices[tos];
 
-                    if (tos != -1) {
-                        tosVal = temperatures[stackIndices[tos]];
-                    } else {
-                        break;
-                    }
-                }
-            }
+		    --tos;
 
-            ++tos;
-            stackIndices[tos] = i;
-        }
+		    if (tos != -1) {
+			    tosVal = temperatures[stackIndices[tos]];
+		    } else {
+			    break;
+		    }
+	    }
 
-        return forecast;
+	    ++tos;
+	    stackIndices[tos] = i;
+	}
+
+	return forecast;
     }
 
 }

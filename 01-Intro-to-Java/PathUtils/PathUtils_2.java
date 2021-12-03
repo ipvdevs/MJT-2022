@@ -1,11 +1,11 @@
-public class PathUtils {
+public class PathUtils_2 {
     public static void main(String[] args) {
         System.out.println(getCanonicalPath("/home/"));
         System.out.println(getCanonicalPath("/../"));
         System.out.println(getCanonicalPath("/home//foo/"));
         System.out.println(getCanonicalPath("/a/./b/../../c/"));
-        System.out.println(getCanonicalPath("/a/./b/..../.../c/../../")); // out: /a/b/....
-        System.out.println(getCanonicalPath("/a/./b/..../.../c/../.././../")); // out: /a/b
+        System.out.println(getCanonicalPath("/a/./b/..../.../c/../../"));
+        System.out.println(getCanonicalPath("/a/./b/..../.../c/../.././../"));
         System.out.println(getCanonicalPath("///////home/files//docs/notes////sub///e/e/../.././"));
     }
 

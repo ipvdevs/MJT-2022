@@ -2,7 +2,7 @@ package bg.sofia.uni.fmi.mjt.rentalservice.vehicle;
 
 import bg.sofia.uni.fmi.mjt.rentalservice.location.Location;
 
-public class Bicycle extends VehicleRent {
+public class Bicycle extends AbstractVehicle {
     private static final String TYPE = "BICYCLE";
     private static final double PRICE_PER_MINUTE = 0.20;
 

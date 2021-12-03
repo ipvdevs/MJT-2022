@@ -15,8 +15,9 @@ public class RentalService implements RentalServiceAPI {
 
     @Override
     public double rentUntil(Vehicle vehicle, LocalDateTime until) {
-        if (until == null || until.isBefore(LocalDateTime.now()) || vehicle == null)
+        if (until == null || until.isBefore(LocalDateTime.now()) || vehicle == null) {
             return -1;
+        }
 
         for (Vehicle v : vehicles) {
 

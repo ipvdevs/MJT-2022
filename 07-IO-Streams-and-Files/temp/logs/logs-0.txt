@@ -1,0 +1,2 @@
+[INFO]|2021-12-23T23:19:17.777459929|bg.sofia.uni.fmi.mjt.logger|{name: Tim Tester, age: 25, salary: 1200.000000}
+
